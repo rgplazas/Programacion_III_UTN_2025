@@ -9,21 +9,24 @@ Este repositorio contiene todo el código utilizado durante la cursada, organiza
 ---
 
 ## 📂 Estructura del Repositorio  
+
+```bash
 Programacion_III_UTN_2025/ 
 │── Clase_01/ 
-│ ├── index.html 
-│ ├── clase01_01.html (Introducción a HTML)
-│ ├── clase01_02.html (Formatos)
-│ ├── ...
+│   ├── index.html 
+│   ├── clase01_01.html  # Introducción a HTML
+│   ├── clase01_02.html  # Formatos
+│   ├── ...
 │── Clase_02/
-│ ├── ...
-│ ├── ...
+│   ├── ...
+│   ├── ...
 │── Clase_03/
-│ ├── ...
-│ ├── ...
+│   ├── ...
+│   ├── ...
 │── ... 
 │── README.md 
 │── .gitignore
+```
 
 - **Cada clase tiene su propia carpeta** con código de ejemplo.  
 - **El material sigue la planificación oficial** de la materia Programación III (Plan 2025).  
@@ -70,17 +73,13 @@ Para seguir la cursada y ejecutar los ejercicios, necesitarás:
    ```
 3. **Instala las dependencias del proyecto (si aplica)**  
    ```sh
-   cd Programacion_III_UTN_2025/Clase_01
+   npm install
    ```
 4. **Ejecuta el servidor backend (si aplica)**  
    ```sh
-   cd Programacion_III_UTN_2025/Clase_01
+   node server.js
    ```
 5. **Abre el archivo HTML en el navegador para visualizar la práctica**  
-   ```sh
-   cd Programacion_III_UTN_2025/Clase_01
-   ```
-
 
 ---
 
@@ -88,16 +87,14 @@ Para seguir la cursada y ejecutar los ejercicios, necesitarás:
 
 Si quieres colaborar en este repositorio:
   1. Haz un fork del proyecto.
-  2. Crea una nueva rama (feature/nueva_funcionalidad).
+  2. Crea una nueva rama (`feature/nueva_funcionalidad`).
   3. Sube tus cambios y haz un pull request.
-
 
 ---
 
 ## 📧 Contacto
 
 Si tienes dudas o sugerencias, puedes abrir un issue en GitHub o contactarme por correo electrónico.
-
 
 ---
 
