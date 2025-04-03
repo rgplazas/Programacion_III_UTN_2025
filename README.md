@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![UTN Logo](https://fra.utn.edu.ar/wp-content/uploads/2023/07/utn_logo_svg.svg)](https://fra.utn.edu.ar/wp-content/uploads/2023/07/utn_logo_svg.svg))
+[![UTN Logo](https://fra.utn.edu.ar/wp-content/uploads/2023/07/utn_logo_svg.svg)](https://fra.utn.edu.ar/wp-content/uploads/2023/07/utn_logo_svg.svg)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
