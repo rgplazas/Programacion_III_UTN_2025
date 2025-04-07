@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ANIMACIONES</title>
+		
+    <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+
+    <style> 
+
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation: mi-animacion 5s linear 2s infinite alternate;
+        }
+        
+        @keyframes mi-animacion {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:400px; top:0px;}
+          50%  {background-color:blue; left:400px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+
+    </style>
+
+</head>
+<body>
+    <pre>
+        @keyframes identificador
+        {
+            [ 
+                [ from | to | porcentaje% ] 
+                [, from | to | porcentaje% ]* block 
+            ]*
+        }
+    </pre>
+
+    <div></div>
+
+</body>
+</html>

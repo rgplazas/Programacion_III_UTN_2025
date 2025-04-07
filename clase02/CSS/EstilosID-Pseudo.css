@@ -1,0 +1,38 @@
+#id_unico {
+	position : relative;
+	background : lime;
+	height : 500px; 
+	padding-left : 50px;
+	padding-top: 100px;
+	border : solid;
+	border-color : red;
+	border-width : 1;
+	visibility:visible;
+}
+a:link {
+	color : rgb(147, 201, 55);	
+}
+a:active{
+	color:rgb(245, 59, 8);
+}
+a:hover{
+	color : green;
+}
+a:visited{
+	color:rgb(183, 30, 56);
+}
+
+p:first-line{
+	font-style : small-camps;
+}
+p:first-letter{
+	font-size : 250%;
+	float : left;
+}
+
+div.claseDiv{
+	border : dotted;
+	border-color : black;
+	border-width : 2;
+	visibility:visible;	
+}

@@ -1,0 +1,13 @@
+p {
+	background : rgb(47, 255, 0);
+	color : navy;
+	font-size : 20pt;
+}
+p.negrita {
+	font-weight : bold;
+}
+.claseGenerica {
+	font-style : italic;
+	font-size : 18pt;
+	font-family: Currier New;
+}

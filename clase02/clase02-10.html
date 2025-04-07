@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - BORDES REDONDOS</title>
+		
+    <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+
+    <link type="text/css" rel="stylesheet" href="CSS/Estilos-contenedores.css" />
+
+    <style type="text/css">
+        #corner1 {
+          border-radius: 25px;
+          background: #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px;  
+        }
+
+        #corner2 {
+          border-radius: 25px;
+          border: 2px solid #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px;  
+        }
+
+        #corner3 {
+          border-radius: 25px;
+          background: url("img/coronavirus.jpg");
+          background-position: left top;
+          background-repeat: round;
+          padding: 20px; 
+          width: 200px;
+          height: 150px;  
+        }
+
+        h2 {
+          border-radius: 95px;         
+          padding: 20px; 
+          width: 200px;
+          height: 200px; 
+          text-align: center; 
+        }
+
+        h2.fondo {
+          background: seagreen;
+        }
+
+        h2.borde {
+          border: 2px solid rgb(235, 37, 169);
+        }
+
+        h2.imagen {
+          background: url("img/coronavirus2.jpg");
+          background-repeat: round;
+        }
+       
+    </style>
+</head>
+<body>
+    <h3>Esquinas redondeadas con CSS</h3>
+
+    <div class="clearfix">
+      <div class="container">
+          <p>Esquinas redondeadas para un elemento con color de fondo:</p>
+          <p id="corner1">Esquinas redondeadas</p>
+      </div>
+      <div class="container"> 
+        <p>Esquinas redondeadas para un elemento con color de borde:</p>
+        <p id="corner2">Esquinas redondeadas</p>
+      </div>
+      <div class="container"> 
+        <p>Esquinas redondeadas para un elemento con imagen de fondo:</p>
+        <p id="corner3"></p>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <div class="container">
+          <p>Esquinas redondeadas para un elemento con color de fondo:</p>
+          <h2 class="fondo">Círculo</h2>
+      </div>
+      <div class="container"> 
+        <p>Esquinas redondeadas para un elemento con color de borde:</p>
+        <h2 class="borde">Círculo</h2>
+      </div>
+      <div class="container"> 
+        <p>Esquinas redondeadas para un elemento con imagen de fondo:</p>
+        <h2 class="imagen"></h2>
+      </div>
+    </div>
+
+</body>
+</html>

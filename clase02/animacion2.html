@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ANIMACIONES</title>
+		
+    <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+
+    <style> 
+
+        div {
+        width: 200px;
+        height: 170px;
+        background-image:url("img/coronavirus.jpg");
+        background-repeat: round;
+        position: relative;
+        animation-name: animacion-imagen;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        }
+
+        @keyframes animacion-imagen {
+        0%   {background-image:url("img/coronavirus.jpg"); background-repeat: round;left:400px; top:200px;}
+        25%  {background-image:url("img/coronavirus2.jpg"); background-repeat: round;left:0px; top:0px;}
+        50%  {background-image:url("img/winhomer.jpg"); background-repeat: round;left:400px; top:200px;}
+        75%  {background-image:url("img/faro.jpg"); background-repeat: round;left:0px; top:200px;}
+        100% {background-image:url("img/coronavirus.jpg"); background-repeat: round;left:400px; top:0px;}
+        }
+
+    </style>
+
+</head>
+<body>
+    <pre>
+        en elemento
+        animation-name: identificador;
+        animation-duration: segundos;
+        animation-timing-function: tipo;
+        animation-delay: segundos;
+        animation-iteration-count: segundos;
+        animation-direction: alternate;
+    </pre>
+   
+    <div></div>
+
+</body>
+</html>
