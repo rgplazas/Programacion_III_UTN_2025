@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5 - FORMS e INPUTS</title>
+
+        <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+		
+		<style type="text/css">
+
+			.flex-container {
+				display: flex;
+				justify-content: center;
+				background-color: snow;
+				flex-direction: row;
+			}
+				
+			.flex-container > div {
+				background-color: #f1f1f1;
+				width: 500px;
+				margin-top: 10px;
+				text-align: left;
+				line-height: 75px;
+				font-size: 15px;
+                padding-left: 10px;
+			}
+
+            .flex-container .escondido {
+                visibility: hidden;
+            }
+			
+		</style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="escondido"></div>
+            <div>
+                <form>
+                    Selecciona tu color favorito:
+                    <input type="color" name="favcolor" value="#ff0000">
+                    <br>
+                    <cite><strong>Nota:</strong> type="color" no es soportado por IE 11 y anteriores versiones.</cite>
+                    <hr/>
+                    Fecha de nacimiento:
+                    <input type="date" name="bday" min="1999-01-01" max="2025-03-31" >
+                    <br>
+                    <cite><strong>Nota:</strong> type="date" no es soportado por Firefox o IE 11 y anteriores versiones.</cite>
+                    <hr/>
+                    Inicio de clases (mes y año):
+                    <input type="month" name="mesanio">
+                    <br>
+                    <cite><strong>Nota:</strong> type="month" no es soportado por Firefox o IE 11 y anteriores versiones.</cite>
+                    <hr/>
+                    E-mail:
+                    <input type="email" name="email" >
+                    <br>
+                    <cite><strong>Nota:</strong> type="email" no es soportado por IE 9 y anteriores versiones.</cite>
+                    <hr/>        
+                    Número de lenguajes aprendidos:
+                    <input type="number" name="lenguajes" min="0" max="12" step="2" >
+                    <br>
+                    <cite><strong>Nota:</strong> type="number" no es soportado por IE 9 y anteriores versiones.</cite>
+                    <hr/>
+                    Calificación pretendida:
+                    0<input type="range" name="calificacion" min="0" max="10" value="4" >10
+                    <br>
+                    <cite><strong>Nota:</strong> type="range" no es soportado por IE 9 y anteriores versiones.</cite>
+                    <hr/>
+                    Seleccione horario:
+                    <input type="time" name="horario"  >
+                    <br>
+                    <cite><strong>Nota:</strong> type="time" no es soportado por Firefox o IE 12 y anteriores versiones.</cite>
+                    <hr/>
+                    Indique url:
+                    <input type="url" name="web"  >
+                    <br>
+                    <cite><strong>Nota:</strong> type="url" no es soportado por IE 9 y anteriores versiones.</cite>
+                    <hr/>
+                    Seleccione la mejor semana del año:
+                    <input type="week" name="bestweek"  >
+                    <br>
+                    <cite><strong>Nota:</strong> type="week" no es soportado por Firefox o IE 11 y anteriores versiones.</cite>
+                    <hr/>
+                    <input title="algo" type="text" name="algo" placeholder="Escribe algo" required >
+                    <hr/>
+                    <input list="browsers" placeholder="Elija navegador preferido" >
+                    <datalist id="browsers" >
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <br>
+                    <cite><strong>Nota:</strong> los datalist no son soportados por IE 9 y anteriores versiones.</cite>
+                    <hr/>
+
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Limpiar" />
+                </form>
+            </div>
+            <div class="escondido"></div>
+            <div class="container">
+                <h2></h2>
+                <ul>
+                  <li><a href="index.html">Ir a Clase 05 - Contenidos</a></li>
+                </ul>
+            </div>
+    </body>
+</html>

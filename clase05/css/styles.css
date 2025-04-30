@@ -1,0 +1,15 @@
+.titulo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .centrado {
+    text-align: center;
+  }
+  
+  .error {
+    color: #ff0000;
+  }
+  
+  .cursiva{
+    font-style: italic;
+  }

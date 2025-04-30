@@ -18,7 +18,7 @@ console.log(total);
 
 //DETALLE FUNCIONAMIENTO
 total = nums.reduce(function (anterior, actual, index) {
-    var valor = anterior + actual;
+    let valor = anterior + actual;
     console.log("Valor anterior: " + anterior + "; valor actual: " + actual +
         "; iteración nro.: " + (index + 1));
     return valor;

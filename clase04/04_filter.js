@@ -36,7 +36,7 @@ const productosStock = [
 
 //a.- FORMA 'TRADICIONAL'
 let productosAccesorios = [];
-for (var i = 0; i < productosStock.length; i++) {
+for (let i = 0; i < productosStock.length; i++) {
     if (productosStock[i].categoria === "Accesorios") {
         productosAccesorios.push(productosStock[i]);
     }

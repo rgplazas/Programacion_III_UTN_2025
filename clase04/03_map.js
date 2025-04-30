@@ -45,5 +45,5 @@ nombreDeProductos = productos.map(function (producto, index, array) {
 console.log(nombreDeProductos);
 
 //c.- CON MAP Y =>
-nombreDeProductos = productos.map((producto, index , array) => {if (index > 1){ return producto.nombre}});
+nombreDeProductos = productos.map((producto, index , array) =>  producto.nombre);
 console.log(nombreDeProductos);
