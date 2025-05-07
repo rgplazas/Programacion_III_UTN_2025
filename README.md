@@ -201,27 +201,22 @@ new TodoList();
 ### Clase 5: APIs Web y Fetch 🌐
 
 #### 📖 Explicación Técnica
-Las APIs Web y la API Fetch proporcionan una interfaz moderna para realizar peticiones HTTP y trabajar con respuestas en JavaScript. Fetch es una alternativa más potente y flexible a XMLHttpRequest.
+La API Fetch proporciona una interfaz moderna para realizar peticiones HTTP en JavaScript, reemplazando el antiguo XMLHttpRequest.
 
 #### 🛠️ Conceptos Fundamentales
-- **API Fetch y Promesas**
+- **Promesas y Fetch API**
 - **Métodos HTTP (GET, POST, PUT, DELETE)**
-- **Manejo de datos JSON**
-- **Headers y opciones de petición**
-- **Gestión de errores y estados de respuesta**
-- **Eventos y manipulación del DOM**
+- **Manejo de respuestas JSON**
+- **Headers y opciones de configuración**
+- **Manejo de errores en peticiones**
 
 #### 💡 Ejemplo Práctico
 ```javascript
-// Ejemplo de uso de Fetch API
 async function obtenerDatos() {
     try {
-        const respuesta = await fetch('https://api.ejemplo.com/datos');
-        if (!respuesta.ok) {
-            throw new Error('Error en la petición');
-        }
-        const datos = await respuesta.json();
-        return datos;
+        const response = await fetch('https://api.ejemplo.com/datos');
+        const data = await response.json();
+        return data;
     } catch (error) {
         console.error('Error:', error);
     }
@@ -230,51 +225,88 @@ async function obtenerDatos() {
 
 #### 📚 Recursos Oficiales
 - [MDN Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+- [Using Fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch)
 - [JavaScript.info - Fetch](https://javascript.info/fetch)
-- [Web APIs MDN](https://developer.mozilla.org/es/docs/Web/API)
 
+---
+
+### Clase 6: AJAX y XMLHttpRequest 📡
 
 #### 📖 Explicación Técnica
-Las APIs web modernas y la API Fetch permiten a JavaScript realizar peticiones HTTP asíncronas y trabajar con datos externos de forma eficiente.
+AJAX (Asynchronous JavaScript And XML) es una técnica de desarrollo web que permite actualizar partes de una página web sin recargarla completamente, mejorando la interactividad y experiencia del usuario.
 
 #### 🛠️ Conceptos Fundamentales
-- **API Fetch**
-- **Promesas y async/await**
-- **Métodos HTTP**
-- **Manejo de JSON**
-- **Headers y CORS**
+- **XMLHttpRequest y sus estados**
+- **Eventos de la petición AJAX**
+- **Manejo de datos JSON y XML**
+- **Callbacks y manejo asíncrono**
+- **Integración con APIs REST**
 
 #### 💡 Ejemplo Práctico
 ```javascript
-class APIClient {
-    constructor(baseURL) {
-        this.baseURL = baseURL;
-    }
+function realizarPeticionAJAX() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                const datos = JSON.parse(xhr.responseText);
+                mostrarDatos(datos);
+            } else {
+                console.error('Error en la petición');
+            }
+        }
+    };
+    xhr.open('GET', 'datos.json', true);
+    xhr.send();
+}
+```
 
-    async get(endpoint) {
+#### 📚 Recursos Oficiales
+- [MDN XMLHttpRequest](https://developer.mozilla.org/es/docs/Web/API/XMLHttpRequest)
+- [W3Schools AJAX Tutorial](https://www.w3schools.com/js/js_ajax_intro.asp)
+- [JavaScript.info - Network requests](https://javascript.info/xmlhttprequest)
+
+---
+
+### Clase 7: Fetch Avanzado y Manejo de Datos 📊
+
+#### 📖 Explicación Técnica
+Fetch API avanzado permite realizar operaciones complejas de red, manejar diferentes tipos de datos y implementar patrones de comunicación asíncrona sofisticados en aplicaciones web modernas.
+
+#### 🛠️ Conceptos Fundamentales
+- **Fetch con diferentes métodos HTTP**
+- **Async/Await y promesas encadenadas**
+- **Manejo de archivos y FormData**
+- **Cabeceras personalizadas y CORS**
+- **Manejo de errores avanzado**
+
+#### 💡 Ejemplo Práctico
+```javascript
+class GestorDatos {
+    async obtenerUsuarios() {
         try {
-            const response = await fetch(`${this.baseURL}${endpoint}`);
-            if (!response.ok) throw new Error('Network response was not ok');
-            return await response.json();
+            const response = await fetch('data/usuarios.json');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const usuarios = await response.json();
+            return usuarios;
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error al obtener usuarios:', error);
             throw error;
         }
     }
 
-    async post(endpoint, data) {
+    async enviarDatos(datos) {
         try {
-            const response = await fetch(`${this.baseURL}${endpoint}`, {
+            const response = await fetch('api/datos', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(data)
+                body: JSON.stringify(datos)
             });
-            if (!response.ok) throw new Error('Network response was not ok');
             return await response.json();
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error al enviar datos:', error);
             throw error;
         }
     }
