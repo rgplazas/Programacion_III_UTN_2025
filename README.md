@@ -326,6 +326,19 @@ Programacion_III_UTN_2025/
 │   ├── js/
 │   ├── ejemplos/
 │   └── ejercicios/
+├── clase06/           # AJAX y XMLHttpRequest
+│   ├── ejemplo1/      # Petición AJAX básica
+│   ├── ejemplo2/      # Manejo de JSON
+│   ├── ejemplo3/      # Integración con formularios
+│   └── ejemploCompleto/ # Aplicación CRUD
+├── clase07/           # Fetch Avanzado
+    ├── clase07/
+    │   ├── css/        # Estilos
+    │   ├── data/       # Archivos JSON y datos
+    │   ├── img/        # Imágenes
+    │   ├── *.html      # Ejemplos de implementación
+    │   └── *.js        # Scripts JavaScript
+    └── README.md
 ├── recursos/          # Recursos compartidos
 │   ├── css/
 │   ├── js/
