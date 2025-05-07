@@ -1,0 +1,52 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0 auto;
+  color:#f0f0f0;
+  background:#3f51b5;
+  font-family:'Open Sans',sans-serif;
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.CajaInicio {
+  width:750px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+.CajaInicio h1{
+  background:rgb(14, 26, 112);
+  padding:10px 0;
+  font-size:120%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+input[type="text"], select{
+  width:95%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+}
+.list-group-item-text:hover{
+color:#FF8000;
+}
+.list-group-item.list-group-item:hover h4{
+color:#B40431;
+}
+.CajaInicio table{
+  width: 90%;
+}

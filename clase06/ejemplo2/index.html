@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Comparación</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px;
+    }
+  </style>
+  <script src="ajax2.js"></script>
+</head>
+
+<body>
+  <h1>Comparación Sincrónica vs Asíncrona</h1>
+
+  <p><strong>Contador:</strong> <span id="contador">0</span></p>
+
+  <button onclick="cargarSincronico()">Cargar SINCRÓNICO</button>
+  <button onclick="cargarAsincronico()">Cargar ASÍNCRONO</button>
+
+  <p id="resultado">Esperando datos...</p>
+
+
+</body>
+
+</html>
