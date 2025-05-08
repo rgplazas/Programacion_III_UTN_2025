@@ -332,6 +332,46 @@ async function getUsers() {
 
 ---
 
+### Clase 8: Bootstrap y Diseño Responsivo 🎨
+
+#### 📖 Explicación Técnica
+Bootstrap es un framework front-end que facilita el desarrollo de sitios web responsivos y móviles. Proporciona componentes predefinidos y un sistema de grid que agiliza el proceso de diseño y desarrollo web.
+
+#### 🛠️ Conceptos Fundamentales
+- **Sistema de Grid**
+- **Componentes Bootstrap**
+- **Clases utilitarias**
+- **Personalización de temas**
+- **Diseño responsivo**
+
+#### 💡 Ejemplo Práctico
+```html
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="imagen.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Contenido de la tarjeta con Bootstrap</p>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">Acción Principal</button>
+                        <button class="btn btn-outline-secondary">Acción Secundaria</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+#### 📚 Recursos Oficiales
+- [Bootstrap Documentation](https://getbootstrap.com/docs/)
+- [Bootstrap Examples](https://getbootstrap.com/docs/5.3/examples/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+
+---
+
 ## 📂 Estructura del Repositorio y Recursos Adicionales
 
 ### 📚 Estructura de Carpetas
@@ -364,28 +404,45 @@ Programacion_III_UTN_2025/
 │   ├── ejemplo3/      # Integración con formularios
 │   └── ejemploCompleto/ # Aplicación CRUD
 ├── clase07/           # Fetch Avanzado
-    ├── clase07/
-    │   ├── css/        # Estilos
-    │   ├── data/       # Archivos JSON y datos
-    │   ├── img/        # Imágenes
-    │   ├── *.html      # Ejemplos de implementación
-    │   └── *.js        # Scripts JavaScript
-    └── README.md
+│   ├── css/          # Estilos y animaciones
+│   ├── img/          # Recursos gráficos
+│   ├── ejemplos/     # Ejemplos de Fetch
+│   ├── api/          # Ejemplos con APIs
+│   ├── async/        # Ejemplos Async/Await
+│   └── index.html    # Índice principal
+├── clase08/           # Bootstrap y Diseño Responsivo
+│   ├── css/          # Estilos personalizados
+│   ├── js/           # Scripts JavaScript
+│   ├── ejemplos/     # Componentes Bootstrap
+│   ├── layouts/      # Ejemplos de layouts
+│   └── index.html    # Índice principal
 ├── recursos/          # Recursos compartidos
 │   ├── css/
 │   ├── js/
 │   └── img/
-├── README.md
-└── .gitignore
+├── README.md         # Documentación principal
+└── .gitignore        # Configuración Git
 ```
 
 ### 📝 Organización del Contenido
 
 - **Estructura Modular**: Cada clase está organizada en su propia carpeta con:
-  - Código de ejemplo
-  - Ejercicios prácticos
-  - Recursos específicos
-  - Documentación detallada
+  - Código de ejemplo y demostraciones
+  - Ejercicios prácticos y soluciones
+  - Recursos específicos de la clase
+
+- **Sistema de Carpetas**:
+  - `/ejemplos`: Demostraciones y casos de uso
+  - `/css`: Hojas de estilo y personalizaciones
+  - `/js`: Scripts y funcionalidades JavaScript
+  - `/layouts`: Plantillas y estructuras de página
+  - `/recursos`: Archivos compartidos entre clases
+
+- **Documentación**:
+  - Cada clase incluye su propio README o índice
+  - Ejemplos comentados y documentados
+  - Guías de implementación y mejores prácticas
+  - Referencias a recursos externos útiles
 
 - **Sistema de Ejercicios**:
   - Ejercicios básicos para practicar conceptos
