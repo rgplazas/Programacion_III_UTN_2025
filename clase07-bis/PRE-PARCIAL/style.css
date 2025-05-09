@@ -1,0 +1,78 @@
+/* Estilos globales */
+body {
+    font-family: sans-serif; /* Tipo de fuente */
+    background-color: #f0f4f8; /* Color de fondo suave */
+    margin: 0;
+    padding: 20px; /* Espaciado general */
+    color: #333; /* Color de texto */
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrado horizontal */
+    background-color: #fff; /* Fondo blanco */
+    padding: 25px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px #ccc; /* Sombra suave */
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los campos */
+  }
+  
+  /* Estilos de los inputs y el botón */
+  input, button {
+    padding: 10px;
+    font-size: 1rem; /* Tamaño de fuente */
+  }
+  
+  button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    cursor: pointer; /* Puntero de clic */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  }
+  
+  /* Lista de eventos */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos de cada evento */
+  .evento {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Separación entre eventos */
+    display: flex;
+    justify-content: space-between; /* Espacio entre texto y botón */
+    align-items: center;
+  }
+  
+  /* Estilo para eventos pasados */
+  .pasado {
+    color: gray;
+    text-decoration: line-through; /* Tachar eventos pasados */
+  }
+  
+  /* Estilo para eventos futuros */
+  .futuro {
+    color: #2c3e50;
+  }
+  
+  /* Botón de eliminar */
+  .eliminar {
+    background-color: crimson; /* Color rojo */
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    cursor: pointer; /* Puntero de clic */
+  }
+  

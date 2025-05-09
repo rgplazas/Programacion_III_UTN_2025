@@ -1,0 +1,12 @@
+[
+    {
+      "id": 1,
+      "nombre": "Reunión con equipo",
+      "fecha": "2025-05-10"
+    },
+    {
+      "id": 2,
+      "nombre": "Entrega del trabajo",
+      "fecha": "2023-05-15"
+    }
+  ]

@@ -332,6 +332,44 @@ async function getUsers() {
 
 ---
 
+### Clase 7-bis: Peticiones HTTP Avanzadas 📝
+
+#### 📖 Explicación Técnica
+Profundizamos en diferentes métodos para realizar peticiones HTTP en JavaScript, explorando Fetch API, Async/Await y Axios para consumir APIs REST.
+
+#### 🛠️ Conceptos Fundamentales
+- **Fetch API y promesas encadenadas**
+- **Async/Await para código asíncrono**
+- **Axios como cliente HTTP**
+- **Manejo de errores en peticiones**
+- **Consumo de APIs REST**
+
+#### 💡 Ejemplo Práctico
+```javascript
+// Ejemplo con Async/Await
+const getNameAsync = async (idPost) => {
+    try {
+        const URL = "https://jsonplaceholder.typicode.com/"
+        let respuestaPost = await fetch(`${URL}posts/${idPost}`)
+        let post = await respuestaPost.json()
+        let respuestaUser = await fetch(`${URL}users/${post.userId}`)
+        let user = await respuestaUser.json()
+
+        document.write(`El Post ${idPost} con el título ${post.title} 
+                       lo escribió ${user.name} de ${user.address.city}`)
+    } catch (error) {
+        console.log(error)
+    }
+}
+```
+
+#### 📚 Recursos Oficiales
+- [MDN Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+- [Axios Documentation](https://axios-http.com/docs/intro)
+- [JavaScript.info - Async/Await](https://javascript.info/async-await)
+
+---
+
 ### Clase 8: Bootstrap y Diseño Responsivo 🎨
 
 #### 📖 Explicación Técnica
@@ -399,9 +437,17 @@ Programacion_III_UTN_2025/
 │   ├── ejemplos/
 │   └── ejercicios/
 ├── clase06/           # AJAX y XMLHttpRequest
-│   ├── ejemplo1/      # Petición AJAX básica
-│   ├── ejemplo2/      # Manejo de JSON
-│   ├── ejemplo3/      # Integración con formularios
+│   ├── js/
+│   ├── ejemplos/
+│   └── ejercicios/
+├── clase07/           # Fetch Avanzado y Manejo de Datos
+│   ├── js/
+│   ├── ejemplos/
+│   └── ejercicios/
+├── clase07-bis/       # WebSockets Avanzado y Tiempo Real
+│   ├── js/
+│   ├── ejemplos/
+│   └── ejercicios/
 │   └── ejemploCompleto/ # Aplicación CRUD
 ├── clase07/           # Fetch Avanzado
 │   ├── css/          # Estilos y animaciones

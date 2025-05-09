@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Agenda</title>
+  <!-- Enlace al archivo de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Contenedor principal para la agenda -->
+  <div class="container">
+    <!-- Título principal de la página -->
+    <h1>👋 Bienvenido a tu agenda</h1>
+
+    <!-- Formulario para agregar eventos -->
+    <form id="formulario">
+      <!-- Campo para ingresar el nombre del evento -->
+      <input type="text" id="nombreEvento" placeholder="Nombre del evento" required>
+      <!-- Campo para seleccionar la fecha del evento -->
+      <input type="date" id="fechaEvento" required>
+      <!-- Botón para enviar el formulario y agregar el evento -->
+      <button type="submit">Agregar evento</button>
+    </form>
+
+    <!-- Lista donde se mostrarán los eventos cargados -->
+    <h2>Tus eventos:</h2>
+    <ul id="listaEventos"></ul> <!-- Aquí se van a insertar los eventos -->
+  </div>
+
+  <!-- Enlace al archivo de JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
