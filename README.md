@@ -417,72 +417,70 @@ Bootstrap es un framework front-end que facilita el desarrollo de sitios web res
 ```bash
 Programacion_III_UTN_2025/
 ├── clase01/           # Introducción a HTML5
-│   ├── index.html
-│   ├── ejemplos/
-│   └── ejercicios/
+│   ├── index.html     # Página principal de la clase
+│   ├── clase01_01.html, clase01_02.html, ... # Ejemplos secuenciales
+│   ├── imagenes/      # Recursos de imágenes
+│   └── media/         # Recursos multimedia
 ├── clase02/           # CSS3 y Diseño Web
-│   ├── css/
-│   ├── ejemplos/
-│   └── ejercicios/
+│   ├── index.html     # Página principal de la clase
+│   ├── clase02_*.html # Ejemplos de CSS
+│   └── css/           # Hojas de estilo
 ├── clase03/           # JavaScript Fundamentos
-│   ├── js/
-│   ├── ejemplos/
-│   └── ejercicios/
+│   ├── index.html     # Página principal de la clase
+│   ├── clase03_*.html # Ejemplos de JavaScript
+│   └── js/            # Scripts de JavaScript
 ├── clase04/           # DOM y Eventos
-│   ├── js/
-│   ├── ejemplos/
-│   └── ejercicios/
+│   ├── index.html     # Página principal de la clase
+│   ├── clase04_*.html # Ejemplos de manipulación DOM
+│   └── js/            # Scripts para eventos
 ├── clase05/           # APIs Web y Fetch
-│   ├── js/
-│   ├── ejemplos/
-│   └── ejercicios/
+│   ├── index.html     # Página principal de la clase
+│   ├── clase05_*.html # Ejemplos de Fetch API
+│   └── js/            # Scripts para peticiones
 ├── clase06/           # AJAX y XMLHttpRequest
-│   ├── js/
-│   ├── ejemplos/
-│   └── ejercicios/
+│   ├── index.html     # Página principal de la clase
+│   ├── clase06_*.html # Ejemplos de AJAX
+│   └── js/            # Scripts para AJAX
 ├── clase07/           # Fetch Avanzado y Manejo de Datos
-│   ├── js/
-│   ├── ejemplos/
-│   └── ejercicios/
-├── clase07-bis/       # WebSockets Avanzado y Tiempo Real
-│   ├── js/
-│   ├── ejemplos/
-│   └── ejercicios/
-│   └── ejemploCompleto/ # Aplicación CRUD
-├── clase07/           # Fetch Avanzado
-│   ├── css/          # Estilos y animaciones
-│   ├── img/          # Recursos gráficos
-│   ├── ejemplos/     # Ejemplos de Fetch
-│   ├── api/          # Ejemplos con APIs
-│   ├── async/        # Ejemplos Async/Await
-│   └── index.html    # Índice principal
+│   ├── index.html     # Página principal de la clase
+│   ├── api*.html      # Ejemplos de API con Fetch/Async
+│   ├── api_*.js       # Scripts para consumo de APIs
+│   ├── css/           # Estilos para ejemplos
+│   ├── data/          # Datos de ejemplo
+│   ├── img/           # Recursos gráficos
+│   └── manejadora.js  # Script principal
+├── clase07-bis/       # Peticiones HTTP Avanzadas
+│   ├── index.html     # Página principal de la clase
+│   ├── clase07bis_*.html # Ejemplos avanzados
+│   └── js/            # Scripts para peticiones avanzadas
 ├── clase08/           # Bootstrap y Diseño Responsivo
-│   ├── css/          # Estilos personalizados
-│   ├── js/           # Scripts JavaScript
-│   ├── ejemplos/     # Componentes Bootstrap
-│   ├── layouts/      # Ejemplos de layouts
-│   └── index.html    # Índice principal
-├── recursos/          # Recursos compartidos
-│   ├── css/
-│   ├── js/
-│   └── img/
-├── README.md         # Documentación principal
-└── .gitignore        # Configuración Git
+│   ├── index.html     # Página principal de la clase
+│   ├── bootstrap.min.css # Framework CSS Bootstrap
+│   ├── bootstrap.bundle.min.js # Scripts de Bootstrap
+│   └── pages/         # Páginas de ejemplo
+├── modelo_primer_parcial/ # Modelo para el primer examen parcial
+│   ├── index.html     # Página principal del modelo
+│   ├── css/           # Estilos del modelo
+│   ├── js/            # Scripts del modelo
+│   └── img/           # Imágenes del modelo
+├── index.html         # Página principal del repositorio
+└── README.md          # Documentación principal
 ```
 
 ### 📝 Organización del Contenido
 
 - **Estructura Modular**: Cada clase está organizada en su propia carpeta con:
-  - Código de ejemplo y demostraciones
-  - Ejercicios prácticos y soluciones
-  - Recursos específicos de la clase
+  - Archivos HTML secuenciales (clase0X_01.html, clase0X_02.html, etc.)
+  - Recursos específicos (CSS, JavaScript, imágenes)
+  - Página index.html que sirve como índice de la clase
 
 - **Sistema de Carpetas**:
-  - `/ejemplos`: Demostraciones y casos de uso
   - `/css`: Hojas de estilo y personalizaciones
   - `/js`: Scripts y funcionalidades JavaScript
-  - `/layouts`: Plantillas y estructuras de página
-  - `/recursos`: Archivos compartidos entre clases
+  - `/img` o `/imagenes`: Recursos gráficos
+  - `/media`: Archivos multimedia
+  - `/data`: Datos de ejemplo para APIs
+  - `/pages`: Páginas adicionales o ejemplos
 
 - **Documentación**:
   - Cada clase incluye su propio README o índice
@@ -564,10 +562,12 @@ Para comenzar con el curso, necesitarás:
 - ✅ **Editor de Código**: [Visual Studio Code](https://code.visualstudio.com/) (recomendado)
 - ✅ **Navegador Moderno**: Chrome, Firefox, o Edge en su última versión
 - ✅ **Git**: [Descarga aquí](https://git-scm.com/downloads) para control de versiones
+- ✅ **Conocimientos Básicos**: HTML, CSS y fundamentos de programación
 
 ### Próximos Requisitos (para módulos avanzados)
 - 🔄 **Node.js**: Versión LTS desde [nodejs.org](https://nodejs.org/)
 - 🔄 **MySQL**: Community Edition
+- 🔄 **Supabase**: Para ejemplos de backend-as-a-service
 
 ---
 
@@ -585,7 +585,8 @@ Para comenzar con el curso, necesitarás:
 
 3. **Abre el proyecto**
    - Abre `index.html` en tu navegador para ver la página principal
-   - Explora la carpeta `clase01` para ver los ejercicios iniciales
+   - Cada carpeta de clase contiene su propio `index.html` con ejemplos
+   - Revisa el `modelo_primer_parcial` para practicar para el examen
 
 4. **Mantente actualizado**
    ```sh
