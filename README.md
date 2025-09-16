@@ -471,7 +471,7 @@ Programacion_III_UTN_2025/
 
 - **Sistema de Carpetas**:
   - `/css`: Hojas de estilo y personalizaciones
-  - `/js`: Scripts y funcionalidades JavaScript
+  - `/js`: Scripts y funcionalidades JavaScript  
   - `/img` o `/imagenes`: Recursos gráficos
   - `/media`: Archivos multimedia
   - `/data`: Datos de ejemplo para APIs
