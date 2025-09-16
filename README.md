@@ -458,11 +458,6 @@ Programacion_III_UTN_2025/
 │   ├── bootstrap.min.css # Framework CSS Bootstrap
 │   ├── bootstrap.bundle.min.js # Scripts de Bootstrap
 │   └── pages/         # Páginas de ejemplo
-├── modelo_primer_parcial/ # Modelo para el primer examen parcial
-│   ├── index.html     # Página principal del modelo
-│   ├── css/           # Estilos del modelo
-│   ├── js/            # Scripts del modelo
-│   └── img/           # Imágenes del modelo
 ├── index.html         # Página principal del repositorio
 └── README.md          # Documentación principal
 ```
