@@ -467,7 +467,7 @@ Programacion_III_UTN_2025/
 - **Estructura Modular**: Cada clase está organizada en su propia carpeta con:
   - Archivos HTML secuenciales (clase0X_01.html, clase0X_02.html, etc.)
   - Recursos específicos (CSS, JavaScript, imágenes)
-  - Página index.html que sirve como índice de la clase
+  - Página index.html que sirve como índice de la clase 
 
 - **Sistema de Carpetas**:
   - `/css`: Hojas de estilo y personalizaciones
